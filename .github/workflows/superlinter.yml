@@ -1,5 +1,7 @@
 name: Super-Linter
+
 on: push
+
 jobs:
   super-lint:
     name: Lint code base
@@ -13,4 +15,3 @@ jobs:
         env: 
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
